@@ -91,6 +91,11 @@ footer {
     display: block;
     margin: 10px 0;
     max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.recent-topic video:hover, .recent-topic audio:hover {
+    transform: scale(1.05);
 }
 
 .recent-topic p {
@@ -146,5 +151,13 @@ form input:focus, form textarea:focus {
 
 .submit-btn:hover {
     background-color: #45a049;
+}
+
+form::after {
+    content: " - your feedback means a lot! 😊";
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    color: #2B6CB0;
 }
 
